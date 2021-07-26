@@ -1420,3 +1420,7 @@ window.onbeforeunload = function() {
 		}
 	}
 };
+
+socket.once('disconnect', function () {
+	window.location.reload();
+});
